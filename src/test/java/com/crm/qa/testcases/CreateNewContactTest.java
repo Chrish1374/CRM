@@ -13,10 +13,6 @@ import com.crm.qa.util.TestUtil;
 
 public class CreateNewContactTest extends TestBase{
 
-	public CreateNewContactTest() {
-		super();
-	}
-	
 	LoginPage lg;
 	HomePage hm;
 	ContactsPage ct;

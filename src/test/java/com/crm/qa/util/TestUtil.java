@@ -14,6 +14,7 @@ import org.openqa.selenium.TakesScreenshot;
 
 import com.crm.qa.base.TestBase;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class TestUtil extends TestBase{
 
@@ -24,6 +25,11 @@ public class TestUtil extends TestBase{
 			+ "testdata/testData.xlsx";
 	static Workbook book;
 	static Sheet sheet;
+	public static LogStatus PASS = LogStatus.PASS;
+	public static LogStatus FAIL = LogStatus.FAIL;
+	public static LogStatus SKIP = LogStatus.SKIP;
+	public static LogStatus INFO = LogStatus.INFO;
+	
 	
 	public static Object[][] getTestData(String shName){
 		
